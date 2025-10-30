@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: Apache-2.0
+The *VEX Tooling Project* is an https://alpha-omega.dev/[Alpha-Omega Fund] initiative providing open-source tooling for analyzing the impact of vulnerabilities in third-party dependencies and generating https://cyclonedx.org/capabilities/vex/[VEX (Vulnerability Exploitability eXchange)] documents.
+
+These tools support the *entire lifecycle* of VEX document creation, from the disclosure of a vulnerability in a dependency to the automated generation of accurate VEX statements.
+The goal is to help organizations determine which vulnerabilities are truly exploitable in their software and communicate that information clearly and efficiently.
+
+== Project Components
+
+https://github.com/vex-generation-toolset/root-cause-service[Root Cause Service]::
+Analyzes publicly available data to determine which *method or function* introduces a vulnerability in a third-party dependency.
+
+https://github.com/vex-generation-toolset/java-callgraph[Java CallGraph generator]::
+Generates precomputed *call graphs* for Java dependencies to accelerate analysis of which vulnerable methods are *actually invoked* by an application.
+
+https://github.com/vex-generation-toolset/callgraph-metadata[Example call graph database]::
+Provides a *sample call graph dataset* containing precomputed call graphs for dependencies used by https://solr.apache.org/[{solr-url}][Apache Solr].
+
+VEX statement generator::
+Automatically generates *VEX documents* based on results from the root cause and call graph analyses — enabling high-quality, machine-readable vulnerability reports.
+
+GitHub Actions integration::
+Provides prebuilt *GitHub Actions* to easily integrate VEX document generation into existing *CI/CD pipelines*, supporting automated vulnerability analysis and reporting.
