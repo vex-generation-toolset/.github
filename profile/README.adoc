@@ -13,7 +13,7 @@ https://github.com/vex-generation-toolset/java-callgraph[Java CallGraph generato
 Generates precomputed *call graphs* for Java dependencies to accelerate analysis of which vulnerable methods are *actually invoked* by an application.
 
 https://github.com/vex-generation-toolset/callgraph-metadata[Example call graph database]::
-Provides a *sample call graph dataset* containing precomputed call graphs for dependencies used by https://solr.apache.org/[{solr-url}][Apache Solr].
+Provides a *sample call graph dataset* containing precomputed call graphs for dependencies used by https://solr.apache.org/[Apache Solr].
 
 VEX statement generator::
 Automatically generates *VEX documents* based on results from the root cause and call graph analyses — enabling high-quality, machine-readable vulnerability reports.
