@@ -12,8 +12,8 @@ Analyzes publicly available data to determine which *method or function* introdu
 https://github.com/vex-generation-toolset/java-callgraph[Java CallGraph generator]::
 Generates precomputed *call graphs* for Java dependencies to accelerate analysis of which vulnerable methods are *actually invoked* by an application.
 
-https://github.com/vex-generation-toolset/callgraph-metadata[Example call graph database]::
-Provides a *sample call graph dataset* containing precomputed call graphs for dependencies used by https://solr.apache.org/[Apache Solr].
+https://github.com/vex-generation-toolset/callgraph-metadata[Metadata database]::
+Provides a *sample metadata dataset* containing precomputed CVE root causes and call graphs for dependencies used by https://solr.apache.org/[Apache Solr].
 
 https://github.com/vex-generation-toolset/vex-generation-service[VEX statement generator]::
 Automatically generates *VEX documents* based on results from the root cause and call graph analyses — enabling high-quality, machine-readable vulnerability reports.
